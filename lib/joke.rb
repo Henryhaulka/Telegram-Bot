@@ -1,7 +1,7 @@
 require 'telegram/bot'
 require 'net/http'
 require 'json'
-require_relative 'bot.rb'
+require_relative 'bot'
 
 class JokeLib
   @item = nil
