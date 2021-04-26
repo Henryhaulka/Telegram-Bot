@@ -15,7 +15,8 @@ class Bot
                       item = JokeLib.new
                         value = item.inquire_a_request
                         bot.api.send_message(chat_id: message.chat.id, text: "#{value['joke']}", date: message.date)
-
+                    else
+                        bot.api.send_message(chat_id: message.chat.id, text:"Invalid inputs...  #{message.from.first_name} type a valid input, either of /joke or /motivation or /start or /stop ")
                 end
             end
         end
