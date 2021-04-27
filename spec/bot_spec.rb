@@ -31,6 +31,11 @@ describe JokeLib do
         it 'Returns a Hash' do
             expect(ask_json.class).to eql(Hash)
         end
+        it 'Returns a non Json object' do
+            expect(ask_json.length).to_not eql(0)
+         end
+
+    end
 
          
     
