@@ -12,4 +12,14 @@ describe Motivation do
     it 'Returns a non JSON object' do
         expect(ask_json.length).to_not eql(0)
     end
+    describe '#random_quote' do
+        let(:make_quote) {Motivation.new}
+        let(:ask_json) {make_request.random_quote}
+        it 'Returns an Hash' do
+            expect(ask_json.class).to eql(Hash)
+        end
+        it 'Returns a key and value pair' do
+             expect(ask_json.length).to eql(2)
+        end
+    end
 end
