@@ -4,7 +4,8 @@ require 'net/http'
 require_relative 'bot'
 
 class Motivation
-  attr_accessor :motive, :make_motive_request 
+  attr_accessor :motive
+
   def initialize
     @motive = make_motive_request
   end
@@ -13,7 +14,6 @@ class Motivation
     @motive = @motive.sample
     @motive
   end
-
 
   def make_motive_request
     urp = URI('https://type.fit/api/quotes')

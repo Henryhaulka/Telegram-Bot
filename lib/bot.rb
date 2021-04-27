@@ -3,18 +3,15 @@ require_relative 'joke'
 require_relative 'motivation'
 
 class Bot
-  attr_accessor :access, :validate 
   def initialize
-    @access = validate
+    validate
   end
-
 
   private
 
- def validate
-  attr_accessor :bot, :message
+  def validate
     token = '1746243344:AAHfoHmw3_i-H5S3aKzLHEcVB02-ILlSieY'
-      Telegram::Bot::Client.run(token) do |bot|
+    Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         case message.text.downcase
         when '/start', 'hello'
@@ -43,5 +40,3 @@ class Bot
     end
   end
 end
-
- 

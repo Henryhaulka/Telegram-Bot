@@ -25,12 +25,12 @@ describe Motivation do
     end
   end
   describe '#initialize' do
-    it "Returns a method" do
+    it 'Returns a method' do
       expect(@motive).to eql(@make_motive_request)
     end
   end
   describe '#random_quote' do
-    it "Returns a another method" do
+    it 'Returns a another method' do
       expect(@motive).to eql(@motive)
     end
   end
@@ -51,13 +51,13 @@ end
 
 describe Bot do
   describe '#initialize' do
-      it 'Returns a Private method' do
-         expect(@access).to eql(@validate)
-      end
+    it 'Returns a Private method' do
+      expect(@access).to eql(@validate)
+    end
   end
   describe '#validate' do
-      it 'Returns a message' do
-         expect( @bot).to eql(@message)
-      end
+    it 'Returns a message' do
+      expect(@bot).to eql(@message)
+    end
   end
 end
