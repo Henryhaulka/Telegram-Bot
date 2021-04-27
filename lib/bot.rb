@@ -9,8 +9,8 @@ class Bot
       bot.listen do |message|
         case message.text.downcase
         when '/start'
-        bot.api.send_message(chat_id: message.chat.id,
-        text:"Hello #{message.from.first_name},
+          bot.api.send_message(chat_id: message.chat.id,
+                               text: "Hello #{message.from.first_name},
     Welcome to quotes/jokes created by HENRY.
     Use /start to start the bot, /joke for jokes,
     /motivate for quotes, /stop to stop the bot")
