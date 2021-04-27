@@ -24,7 +24,7 @@ In this project I  built a Telegram Bot that generates motivational quotes and J
 - **Navigate to your telegram account**
 - **On your telegram account search for**
     @HaulkaBot
-- **Then press the /start or type hello button and follow the steps given**
+- **Then press the /start button or type hello  and follow the steps given**
 To get a local copy up and running follow these simple example steps.
 
 ### Installation
