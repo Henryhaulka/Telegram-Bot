@@ -1,5 +1,6 @@
 require_relative '../lib/motivation'
 require_relative '../lib/joke'
+require_relative '../lib/bot'
 
 describe Motivation do
   describe '#make_motive_request' do
@@ -23,6 +24,16 @@ describe Motivation do
       end
     end
   end
+  describe '#initialize' do
+    it "Returns a method" do
+      expect(@motive).to eql(@make_motive_request)
+    end
+  end
+  describe '#random_quote' do
+    it "Returns a another method" do
+      expect(@motive).to eql(@motive)
+    end
+  end
 end
 
 describe JokeLib do
@@ -35,5 +46,18 @@ describe JokeLib do
     it 'Returns a non Json object' do
       expect(ask_json.length).to_not eql(0)
     end
+  end
+end
+
+describe Bot do
+  describe '#initialize' do
+      it 'Returns a Private method' do
+         expect(@access).to eql(@validate)
+      end
+  end
+  describe '#validate' do
+      it 'Returns a message' do
+         expect( @bot).to eql(@message)
+      end
   end
 end

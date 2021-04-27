@@ -31,10 +31,6 @@ To get a local copy up and running follow these simple example steps.
 
 **Add following line to your Gemfile:**
 
-- gem 'telegram-bot-ruby'
-
-**And then execute:**
-
 - $ bundle
 
 **Or install it system-wide:**

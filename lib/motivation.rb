@@ -1,9 +1,10 @@
 require 'telegram/bot'
-require 'Json'
+require 'json'
 require 'net/http'
 require_relative 'bot'
 
 class Motivation
+  attr_accessor :motive, :make_motive_request 
   def initialize
     @motive = make_motive_request
   end
@@ -12,6 +13,7 @@ class Motivation
     @motive = @motive.sample
     @motive
   end
+
 
   def make_motive_request
     urp = URI('https://type.fit/api/quotes')
