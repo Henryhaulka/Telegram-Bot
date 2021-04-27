@@ -23,3 +23,16 @@ describe Motivation do
         end
     end
 end
+
+describe JokeLib do
+    describe '#inquire_a_request' do
+        let(:request) {JokeLib.new}
+        let(:ask_json) {request.inquire_a_request}
+        it 'Returns a Hash' do
+            expect(ask_json.class).to eql(Hash)
+        end
+
+         
+    
+end
+end
