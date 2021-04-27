@@ -4,7 +4,6 @@ require 'json'
 require_relative 'bot'
 
 class JokeLib
-  
   def initialize
     @item = inquire_a_request
   end
