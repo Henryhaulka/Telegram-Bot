@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Telegram Bot
-In this project I  built a Telegram Bot that generates motivational quotes and Jokes that can be initialized on the command line / terminal where it sends motivational messages or Jokes to a specific user on his or her telegram account
+In this project, I  built a Telegram Bot that generates motivational quotes and Jokes that can be initialized on the command line / terminal where it sends motivational messages or Jokes to a specific user on his or her telegram account
 
 
 ![screenshot](/img/bot.png)
