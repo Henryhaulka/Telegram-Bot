@@ -27,6 +27,9 @@ In this project, I  built a Telegram Bot that generates motivational quotes and 
 - **Then press the /start button or type hello  and follow the steps given**
 To get a local copy up and running follow these simple example steps.
 
+### Live Demo
+You can always login to [Telegram](https://web.telegram.org/) and search for `@HenryHaulkaBot`. Alternatively, you can click this [Link](http://t.me/HenryHaulkaBot)
+
 ### Installation
 
 **Add following line to your Gemfile:**
