@@ -7,4 +7,3 @@ gem 'net-http-persistent', '~> 2.9', '>= 2.9.4'
 gem 'rubocop', require: false
 gem 'sinatra'
 gem 'telegram-bot-ruby'
-
