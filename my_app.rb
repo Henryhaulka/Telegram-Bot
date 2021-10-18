@@ -1,4 +1,4 @@
 require 'sinatra'
 get '/' do
-  redirect 't.me/HenryHaulkaBot', 303
+  redirect 'http://t.me/HenryHaulkaBot', 303
 end
