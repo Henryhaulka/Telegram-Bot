@@ -24,10 +24,15 @@ GEM
     inflecto (0.0.2)
     json (2.5.1)
     multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     net-http-persistent (2.9.4)
     parallel (1.20.1)
     parser (3.0.1.0)
       ast (~> 2.4.1)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
     rainbow (3.0.0)
     regexp_parser (2.1.1)
     rexml (3.2.5)
@@ -44,11 +49,17 @@ GEM
       parser (>= 2.7.1.5)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.4)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
     telegram-bot-ruby (0.15.0)
       faraday
       inflecto
       virtus
     thread_safe (0.3.6)
+    tilt (2.0.10)
     unicode-display_width (2.0.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)
@@ -58,11 +69,13 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   json
   net-http-persistent (~> 2.9, >= 2.9.4)
   rubocop
+  sinatra
   telegram-bot-ruby
 
 BUNDLED WITH
