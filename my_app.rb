@@ -1,4 +1,4 @@
 require 'sinatra'
 get '/' do
-  redirect 'http://bot_url_from_BotFather', 303
+  redirect 't.me/HenryHaulkaBot', 303
 end

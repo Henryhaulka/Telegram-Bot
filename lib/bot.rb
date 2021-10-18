@@ -10,7 +10,7 @@ class Bot
   private
 
   def validate
-    token = '1746243344:AAHfoHmw3_i-H5S3aKzLHEcVB02-ILlSieY'
+    token = '2038680310:AAGcnY3QpSdh0BrWiGcyRxzpz32ZXIEBQ2U'
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         case message.text.downcase
