@@ -1,6 +1,7 @@
 require 'telegram/bot'
 require_relative 'joke'
 require_relative 'motivation'
+require_relative '../lib/hide_token'
 
 class Bot
   def initialize
@@ -10,7 +11,7 @@ class Bot
   private
 
   def validate
-    token = '2038680310:AAGcnY3QpSdh0BrWiGcyRxzpz32ZXIEBQ2U'
+    token = TOKEN
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         case message.text.downcase
